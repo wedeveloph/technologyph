@@ -5,7 +5,6 @@ var ImageminPlugin = require('imagemin-webpack-plugin').default
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
-
 const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
   // Tells Webpack which built-in optimizations to use
@@ -17,7 +16,7 @@ module.exports = {
   // the './src' directory
   entry: {
       'main': './src/scripts/main.js',
-      'theme-main': './src/styles/main.scss'
+      'main': './src/styles/main.scss'
   },
     
     // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
