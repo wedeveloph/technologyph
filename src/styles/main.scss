@@ -2,7 +2,7 @@
 /* ADOBE FONTS */
 @import url("https://use.typekit.net/nrd5zsw.css");
 
-$bg-color: #fcfcf9;
+$bg-color: #f6f6f6;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
 
@@ -63,7 +63,7 @@ body {
     h1 {
         font-family: freight-big-pro, serif;
         font-size: 1.8em;
-        margin-bottom: .2em;
+        margin:0;
     }
 
 
@@ -71,6 +71,7 @@ body {
         font-family: "aktiv-grotesk";
         line-height: 1.7em;
         font-size: .9em;
+        margin:0;
     }
 }
 
@@ -80,4 +81,69 @@ body {
     text-align: center;
 }
 
+
+/* MAILCHIMP */
+
+#subscribe{
+    
+    font-weight: 400;
+    font-style: normal;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size:90%;
+    background-image:url(../images/technologyph-icons.png);
+    
+    input{box-sizing: border-box;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;}
+    
+    h1{
+        font-size:2em;
+        color:#222026;
+    }
+    
+    p{
+        margin-bottom:1em;
+        font-size:1.2em;
+        color:#5c5858;
+    }
+    
+    input[type=email]{
+        display:inline-block;
+        height:40px;
+        width:50vw;
+        min-width:200px;
+        border:0;
+        padding:.5em;
+        font-size:1em;
+        font-family: "aktiv-grotesk-extended", sans-serif !important;
+        border-top-left-radius: 20px;
+    }
+    
+    input[type=submit]{
+        display:inline-block;
+        height:40px;
+        border: 0;
+        padding:.5em;
+        font-size:1em;
+        font-family: "aktiv-grotesk-extended", sans-serif !important;
+        background:#5c5858;
+        color: $bg-color;
+        border-bottom-right-radius: 20px;
+        
+    }
+    
+    input[type=submit]:hover{
+        background:blue;
+    }
+    
+}
+
+
 /* STUFF */
+
+
+
