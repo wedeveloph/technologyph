@@ -75,10 +75,45 @@ body {
     }
 }
 
-#footer{
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#header{
+    position: absolute;
+    box-sizing: border-box;
+    top:0; left:0;
+    padding:1.5em;
     width:100%;
-    border-top:1px solid #ddd;
+    
+    img{
+        max-width:300px;
+    }
+}
+
+
+
+#footer{
+    
+    left:0;
+    max-width:100%;
     text-align: center;
+    font-family: "aktiv-grotesk-extended", sans-serif !important;
+    
+    a{
+        color: #0a06a1;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+    
+    a:hover{
+        color: #3059ca;
+    }
 }
 
 
@@ -90,7 +125,7 @@ body {
     font-style: normal;
     background-repeat: repeat-x;
     background-position: bottom;
-    background-size:90%;
+    background-size:80%;
     background-image:url(../images/technologyph-icons.png);
     
     input{box-sizing: border-box;
@@ -101,38 +136,37 @@ body {
     transition: all .3s linear;}
     
     h1{
-        font-size:2em;
+        font-size:2.4em;
         color:#222026;
     }
     
     p{
-        margin-bottom:1em;
+        margin:.5em 0 1em 0;
         font-size:1.2em;
         color:#5c5858;
+        line-height:1.5em;
     }
     
     input[type=email]{
         display:inline-block;
         height:40px;
-        width:50vw;
-        min-width:200px;
+        max-width:100%;
+        min-width:280px;
         border:0;
-        padding:.5em;
+        padding:.75em;
         font-size:1em;
         font-family: "aktiv-grotesk-extended", sans-serif !important;
-        border-top-left-radius: 20px;
     }
     
     input[type=submit]{
         display:inline-block;
         height:40px;
         border: 0;
-        padding:.5em;
+        padding:.75em;
         font-size:1em;
         font-family: "aktiv-grotesk-extended", sans-serif !important;
         background:#5c5858;
         color: $bg-color;
-        border-bottom-right-radius: 20px;
         
     }
     
