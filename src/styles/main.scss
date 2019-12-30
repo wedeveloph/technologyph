@@ -125,6 +125,31 @@ img{
 }
 
 
+    .navigation{
+        
+        position: absolute;
+        top:0;
+        right:0;
+        padding:4vw;
+        
+        a{
+            display:inline-block;
+            text-decoration: none;
+            margin:0 .5em 0 .5em;
+            color:#302f36;
+            font-size:.7em;
+            padding:.5em;
+            border-bottom:1px solid #dbd7d7;
+            text-transform: uppercase;
+            letter-spacing:.4px;
+        }
+        
+        a:hover{
+            color:#6f6e80;
+        }
+        
+    }
+
 /* MAILCHIMP */
 
 #subscribe{
@@ -216,30 +241,6 @@ img{
         cursor: pointer;
     }
     
-    .navigation{
-        
-        position: absolute;
-        top:0;
-        right:0;
-        padding:4vw;
-        
-        a{
-            display:inline-block;
-            text-decoration: none;
-            margin:0 .5em 0 .5em;
-            color:#302f36;
-            font-size:.7em;
-            padding:.5em;
-            border-bottom:1px solid #dbd7d7;
-            text-transform: uppercase;
-            letter-spacing:.4px;
-        }
-        
-        a:hover{
-            color:#6f6e80;
-        }
-        
-    }
     
 }
 

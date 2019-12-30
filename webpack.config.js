@@ -16,7 +16,8 @@ module.exports = {
   // the './src' directory
   entry: {
       'main': './src/scripts/main.js',
-      'main': './src/styles/main.scss'
+      'main': './src/styles/main.scss',
+      'read': './src/styles/read.scss'
   },
     
     // ['./src/scripts/main.js', './src/styles/main.scss', './src/styles/portfolio.scss'],
