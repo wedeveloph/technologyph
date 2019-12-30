@@ -68,7 +68,7 @@ body {
 
 
     p {
-        font-family: "aktiv-grotesk";
+        font-family: Flaco;
         line-height: 1.7em;
         font-size: .9em;
         margin:0;
@@ -129,12 +129,23 @@ img{
     background-size:80%;
     background-image:url(../images/technologyph-icons.png);
     
+    a{
+        font-family:"Flaco Mono";
+        font-size:.9em;
+        text-decoration: none;
+        color:#2c2828;
+    }
+    
     input{box-sizing: border-box;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
-    transition: all .3s linear;}
+        transition: all .3s linear;}
+    
+    small{
+        color:#959595;
+    }
     
     h1{
         font-size:2.5em;
@@ -156,7 +167,7 @@ img{
     input[type=email]{
         display:inline-block;
         max-width:100%;
-        min-width:280px;
+        min-width:290px;
         border:0;
         padding:.75em;
         font-size:1em;
@@ -169,7 +180,7 @@ img{
         float:right;
         margin-left:-.3em;
         padding:.75em;
-        font-size:1em;
+        font-size:.8em;
         text-transform: uppercase;
         font-family: "aktiv-grotesk-extended", sans-serif !important;
         background:#fff;
@@ -180,12 +191,76 @@ img{
     input[type=submit]:hover{
         background: #5c5858;
         color: #fff;
+        line-height:19px;
+        text-shadow: 0 0 18px #fff;
+        cursor: pointer;
+    }
+    
+    .navigation{
+        margin-bottom:7vh;
+        
+        a{
+            display:inline-block;
+            text-decoration: none;
+            margin:0 .5em 0 .5em;
+            color:#302f36;
+            font-size:.7em;
+            padding:.5em;
+            border-bottom:1px solid #dbd7d7;
+            text-transform: uppercase;
+            letter-spacing:.4px;
+        }
+        
+        a:hover{
+            color:#6f6e80;
+        }
+        
     }
     
 }
 
 
 /* STUFF */
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-Bold.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-Italic.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-BoldItalic.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-Regular.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flaco-Mono';
+    src: url('https://technology.ph/assets/fonts/Flaco-Mono.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Mono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
