@@ -138,24 +138,26 @@ img{
     
     h1{
         font-size:2.5em;
-        line-height:2em;
+        line-height:1.5em;
         color:#222026;
     }
     
     p{
-        margin:.5em 0 1em 0;
+        margin-left:.1em;
+        margin-bottom:.5em;
         font-size:1.2em;
         color:#5c5858;
         line-height:1.5em;
     }
     
+    .form-line{
+        display:flex;}
+    
     input[type=email]{
         display:inline-block;
-        height:40px;
         max-width:100%;
         min-width:280px;
         border:0;
-        margin:.5em;
         padding:.75em;
         font-size:1em;
         font-family: "aktiv-grotesk-extended", sans-serif !important;
@@ -163,19 +165,21 @@ img{
     
     input[type=submit]{
         display:inline-block;
-        margin:.5em;
-        height:40px;
         border: 0;
+        float:right;
+        margin-left:-.3em;
         padding:.75em;
         font-size:1em;
+        text-transform: uppercase;
         font-family: "aktiv-grotesk-extended", sans-serif !important;
-        background:#5c5858;
-        color: $bg-color;
+        background:#fff;
+        color: #5c5858;
         
     }
     
     input[type=submit]:hover{
-        background:blue;
+        background: #5c5858;
+        color: #fff;
     }
     
 }
