@@ -1,15 +1,45 @@
+::-moz-selection { /* Code for Firefox */
+  color: #f9f9fc;
+  background: #242421;
+}
+
+::selection {
+  color: #f9f9fc;
+  background: #242421;
+}
+
+
 body{
     font-family: "aktiv-grotesk";
 }
 
 .box{
-    color: purple;
+    
+    .box-inner{
+        
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        flex-wrap: wrap;
+
+    }
+    
+}
+
+.container{
+    
+    left:50%;
+    border-left:1px solid #000;
+    border-right:1px solid #000;
+    width:100%;
+    max-width:650px;
+    transform: translate(-50%, 0);
 }
 
 
 #cover{
     
-    margin:2em;
+    margin-bottom:2vh;
     background: rgba(0, 0, 0, 0.85);
     
     img{
@@ -42,10 +72,14 @@ body{
     
 }
 
+
 #read{
     
-    font-family:"Flaco";
+    font-family:"aktiv-grotesk";
+    font-weight:300;
     
+    
+        
     h3{
         margin:0;
         color:#b0b3ba;
@@ -62,13 +96,88 @@ body{
     
     
     p{
+        font-family: "Flaco", sans-serif;
+        align-self: center;
         margin-left:.1em;
-        margin-bottom:.5em;
-        font-size:1.2em;
+        margin-bottom:1.5em;
+        font-size:1em;
+        font-weight:400;
+        max-width:500px;
+        
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
         color:#5c5858;
-        line-height:1.5em;
+        line-height:1.7em;
+        width:100% !important;
     }
     
     
+    // stylings
+    
+    .read-black{
+        background: #000;
+        padding-top:1em;
+        color:#f2f2f8 !important;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:1em 0 1em 0;
+    
+    }
+    
     
 }
+
+
+
+
+
+
+
+/* ----- */
+
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-Bold.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-Italic.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-BoldItalic.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Flaco';
+    src: url('https://technology.ph/assets/fonts/Flaco-Regular.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Flaco-Mono';
+    src: url('https://technology.ph/assets/fonts/Flaco-Mono.woff2') format('woff2'),
+        url('https://technology.ph/assets/fonts/Flaco-Mono.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
