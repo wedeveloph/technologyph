@@ -104,7 +104,11 @@ img{
     font-family: "aktiv-grotesk-extended", sans-serif !important;
     
     a{
-        color: #0a06a1;
+        font-family:"Flaco-Mono";
+        font-size:.8em;
+        text-decoration: none;
+        text-transform: uppercase !important;
+        color: #72798e;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
@@ -113,7 +117,7 @@ img{
     }
     
     a:hover{
-        color: #3059ca;
+        color: #8e919b;
     }
 }
 
@@ -130,10 +134,15 @@ img{
     background-image:url(../images/technologyph-icons.png);
     
     a{
-        font-family:"Flaco Mono";
-        font-size:.9em;
+        font-family:"Flaco-Mono";
+        font-size:.8em;
         text-decoration: none;
-        color:#2c2828;
+        color:#72798e;
+        text-transform: uppercase;
+    }
+    
+    a:hover{
+        color:#8e919b;
     }
     
     input{box-sizing: border-box;
@@ -145,6 +154,14 @@ img{
     
     small{
         color:#959595;
+    }
+    
+    h3{
+        margin:0;
+        color:#b0b3ba;
+        font-weight:100;
+        font-size:.9em;
+        font-family:"Flaco-Mono";
     }
     
     h1{
@@ -182,7 +199,7 @@ img{
         padding:.75em;
         font-size:.8em;
         text-transform: uppercase;
-        font-family: "aktiv-grotesk-extended", sans-serif !important;
+        font-family: "Flaco-Mono", sans-serif !important;
         background:#fff;
         color: #5c5858;
         
