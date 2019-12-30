@@ -29,11 +29,13 @@ body{
 .container{
     
     left:50%;
+    border-top:1px solid #000;
     border-left:1px solid #000;
     border-right:1px solid #000;
     width:100%;
     max-width:650px;
     transform: translate(-50%, 0);
+    margin-bottom:1em;
 }
 
 
@@ -116,15 +118,18 @@ body{
     
     // stylings
     
-    .read-black{
-        background: #000;
-        padding-top:1em;
-        color:#f2f2f8 !important;
+    .read-block{
+        position: relative;
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin:1em 0 1em 0;
+        margin:0 0 1em 0;
+        padding:1em 1em 0 1em;
+    }
     
+    .read-black{
+        background: #000;
+        color:#f2f2f8 !important;
     }
     
     
@@ -132,6 +137,11 @@ body{
 
 
 
+#footer{
+    
+    border-top:1px solid #000;
+    border-bottom:1px solid #000;
+}
 
 
 
