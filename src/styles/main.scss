@@ -217,7 +217,11 @@ img{
     }
     
     .navigation{
-        margin-bottom:7vh;
+        
+        position: absolute;
+        top:0;
+        right:0;
+        padding:4vw;
         
         a{
             display:inline-block;
