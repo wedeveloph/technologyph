@@ -30,6 +30,7 @@ body {
 .container {
     position: absolute;
     width: 100%;
+    min-height:100%;
     top: 0;
     left: 0;
     display: flex;
@@ -40,10 +41,9 @@ body {
 
 .box {
     position: relative;
+    width: 100%;
     display: flex;
     box-sizing: border-box;
-    align-items: center;
-    width: 100%;
     align-items: center;
     justify-content: center;
     background:none;
@@ -62,7 +62,6 @@ body {
 }
 
 .box {
-    background:none;
 
     h1 {
         font-family: freight-big-pro, serif;
