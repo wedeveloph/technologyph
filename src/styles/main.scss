@@ -90,6 +90,7 @@ img{
     top:0; left:0;
     padding:1.5em;
     width:100%;
+    pointer-events: none;
     
     img{
         max-width:300px;
@@ -125,12 +126,13 @@ img{
 }
 
 
-    .navigation{
+.navigation{
         
         position: absolute;
         top:0;
         right:0;
-        padding:4vw;
+        padding:5vh;
+    z-index:9999;
         
         a{
             display:inline-block;
@@ -148,12 +150,14 @@ img{
             color:#6f6e80;
         }
         
-    }
+}
 
 /* MAILCHIMP */
 
 #subscribe{
     
+    
+    min-height:100vh;
     font-weight: 400;
     font-style: normal;
     background-repeat: repeat-x;
@@ -171,6 +175,7 @@ img{
     
     a:hover{
         color:#8e919b;
+        text-shadow:0 0 15px #25262a;
     }
     
     input{box-sizing: border-box;
