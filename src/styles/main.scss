@@ -135,6 +135,7 @@ img{
     z-index:9999;
         
         a{
+            font-family:"Flaco-Mono";
             display:inline-block;
             text-decoration: none;
             margin:0 .5em 0 .5em;
@@ -148,6 +149,7 @@ img{
         
         a:hover{
             color:#6f6e80;
+            text-shadow:0 0 15px #25262a;
         }
         
 }
@@ -175,7 +177,6 @@ img{
     
     a:hover{
         color:#8e919b;
-        text-shadow:0 0 15px #25262a;
     }
     
     input{box-sizing: border-box;
