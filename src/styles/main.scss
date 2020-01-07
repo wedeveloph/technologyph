@@ -33,24 +33,16 @@ body {
     min-height:100%;
     top: 0;
     left: 0;
-    display: flex;
-    flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .box {
-    position: relative;
     width: 100%;
     display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    background:none;
+    box-sizing: border-box; 
+  align-items: center;
+  justify-content: center;
 
     .box-inner {
-        margin: auto;
-        align-self: center;
         width:80vw;
         padding:1em;
         box-sizing: border-box;
@@ -140,7 +132,7 @@ img{
             text-decoration: none;
             margin:0 .5em 0 .5em;
             color:#302f36;
-            font-size:.7em;
+            font-size:.9em;
             padding:.5em;
             border-bottom:1px solid #dbd7d7;
             text-transform: uppercase;
@@ -157,7 +149,6 @@ img{
 /* MAILCHIMP */
 
 #subscribe{
-    
     
     min-height:100vh;
     font-weight: 400;
@@ -200,14 +191,16 @@ img{
     
     h1{
         font-size:2.5em;
-        line-height:1.5em;
+        line-height:1.1em;
         color:#222026;
+        margin-left:-.1em;
     }
     
     p{
         margin-left:.1em;
+        margin-top:.5em;
         margin-bottom:.5em;
-        font-size:1.2em;
+        font-size:1em;
         color:#5c5858;
         line-height:1.5em;
     }
@@ -217,8 +210,8 @@ img{
     
     input[type=email]{
         display:inline-block;
-        max-width:100%;
-        min-width:290px;
+        width:80%;
+        max-width:290px;
         border:0;
         padding:.75em;
         font-size:1em;
@@ -293,5 +286,10 @@ img{
     font-style: normal;
 }
 
+
+@media only screen and (max-width: 900px) {
+    
+    #header{ display:none;  }
+}
 
 
