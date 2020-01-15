@@ -2,7 +2,7 @@
 /* ADOBE FONTS */
 @import url("https://use.typekit.net/nrd5zsw.css");
 
-$bg-color: #f9f9fc;
+$bg-color: #29292c;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
 
@@ -104,7 +104,7 @@ img{
         font-size:.8em;
         text-decoration: none;
         text-transform: uppercase !important;
-        color: #72798e;
+        color: #e6e5eb;
         -webkit-transition: all .3s linear;
         -moz-transition: all .3s linear;
         -ms-transition: all .3s linear;
@@ -131,10 +131,10 @@ img{
             display:inline-block;
             text-decoration: none;
             margin:0 .5em 0 .5em;
-            color:#302f36;
+            color:#e6e5eb;
             font-size:.9em;
             padding:.5em;
-            border-bottom:1px solid #dbd7d7;
+            border-bottom:1px solid #696262;
             text-transform: uppercase;
             letter-spacing:.4px;
         }
@@ -194,16 +194,15 @@ img{
     h1{
         font-size:2.5em;
         line-height:1.1em;
-        color:#222026;
-        margin-left:-.1em;
+        color:#ffffff;
     }
     
     p{
         margin-left:.1em;
         margin-top:.5em;
-        margin-bottom:.5em;
+        margin-bottom:1em;
         font-size:1em;
-        color:#5c5858;
+        color:#adb2b2;
         line-height:1.5em;
     }
     
