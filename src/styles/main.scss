@@ -63,7 +63,7 @@ body {
 
 
     p {
-        font-family: "Flaco", "Helvetica",  system-ui, -apple-system, BlinkMacSystemFont,;
+        font-family: "aktiv-grotesk", "Helvetica",  system-ui, -apple-system, BlinkMacSystemFont,;
         line-height: 1.7em;
         font-size: .9em;
         margin:0;
@@ -179,14 +179,16 @@ img{
     
     small{
         color:#959595;
+        font-family:"aktiv-grotesk";
     }
     
     h3{
         margin:0;
         color:#b0b3ba;
         font-weight:100;
-        font-size:.9em;
-        font-family:"Flaco-Mono";
+        font-size:.8em;
+        font-family: "Flaco-Mono", monospace;
+        text-transform: uppercase;
     }
     
     h1{
@@ -211,24 +213,27 @@ img{
     input[type=email]{
         display:inline-block;
         width:80%;
+        height: 50px;
         max-width:290px;
         border:0;
         padding:.75em;
         font-size:1em;
-        font-family: "aktiv-grotesk-extended", sans-serif !important;
+        font-family: "Flaco-Mono", monospace;
     }
     
     input[type=submit]{
         display:inline-block;
-        border: 0;
+        height: 50px;
         float:right;
         margin-left:-.3em;
         padding:.75em;
         font-size:.8em;
         text-transform: uppercase;
-        font-family: "Flaco-Mono", sans-serif !important;
+        font-family: "Flaco-Mono", monospace !important;
         background:#fff;
         color: #5c5858;
+        border:0;
+        border-radius:0;
         
     }
     
@@ -244,7 +249,7 @@ img{
 }
 
 
-/* STUFF */
+/* STUFF 
 
 @font-face {
     font-family: 'Flaco';
@@ -278,6 +283,8 @@ img{
     font-style: normal;
 }
 
+*/
+
 @font-face {
     font-family: 'Flaco-Mono';
     src: url('https://technology.ph/assets/fonts/Flaco-Mono.woff2') format('woff2'),
@@ -285,6 +292,8 @@ img{
     font-weight: normal;
     font-style: normal;
 }
+
+
 
 
 @media only screen and (max-width: 900px) {
