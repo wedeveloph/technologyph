@@ -67,7 +67,6 @@ body {
     p {
         font-family: "aktiv-grotesk", "Helvetica",  system-ui, -apple-system, BlinkMacSystemFont,;
         line-height: 1.7em;
-        font-size: .9em;
         margin:0;
     }
 }
@@ -196,13 +195,13 @@ img{
         margin:0;
         color:#b0b3ba;
         font-weight:100;
-        font-size:.8em;
+        font-size:.9em;
         font-family: "Flaco-Mono", monospace;
         text-transform: uppercase;
     }
     
     h1{
-        font-size:2.5em;
+        font-size:3.2em;
         line-height:1.1em;
         color:#ffffff;
     }
@@ -211,7 +210,8 @@ img{
         margin-left:.1em;
         margin-top:.5em;
         margin-bottom:1em;
-        font-size:1em;
+        font-size: 1.2em;
+
         color:#adb2b2;
         line-height:1.5em;
     }
@@ -222,7 +222,7 @@ img{
     input[type=email]{
         display:inline-block;
         width:80%;
-        height: 40px;
+        height: 50px;
         max-width:290px;
         border:0;
         padding:.75em;
@@ -233,7 +233,7 @@ img{
     input[type=submit]{
     -webkit-appearance: none;
         display:inline-block;
-        height: 40px;
+        height: 50px;
         float:right;
         margin-left:-.3em;
         padding:.75em;
