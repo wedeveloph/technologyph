@@ -6,9 +6,11 @@ $bg-color: #111112;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
 
+$t: #adb2b2; // general type
 
-$link: #aeb4c6;
-$link-hover: #6f6e80;
+
+$link: #6f6e80;
+$link-hover: #aeb4c6;
 
 /* MAIN ELEMENTS */
 
@@ -93,9 +95,15 @@ img{
 
 #footer{
     
-    color: #5c5858;
+    position: absolute;
+    bottom:0;
     left:0;
-    max-width:100%;
+    padding:.75em;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    color: $t;
+    opacity:0.8;
     text-align: center;
     font-family: "aktiv-grotesk-extended", sans-serif !important;
     
@@ -249,43 +257,6 @@ img{
     
     
 }
-
-
-/* STUFF 
-
-@font-face {
-    font-family: 'Flaco';
-    src: url('https://technology.ph/assets/fonts/Flaco-Bold.woff2') format('woff2'),
-        url('https://technology.ph/assets/fonts/Flaco-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Flaco';
-    src: url('https://technology.ph/assets/fonts/Flaco-Italic.woff2') format('woff2'),
-        url('https://technology.ph/assets/fonts/Flaco-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Flaco';
-    src: url('https://technology.ph/assets/fonts/Flaco-BoldItalic.woff2') format('woff2'),
-        url('https://technology.ph/assets/fonts/Flaco-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Flaco';
-    src: url('https://technology.ph/assets/fonts/Flaco-Regular.woff2') format('woff2'),
-        url('https://technology.ph/assets/fonts/Flaco-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-*/
 
 @font-face {
     font-family: 'Flaco-Mono';
