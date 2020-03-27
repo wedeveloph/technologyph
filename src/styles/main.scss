@@ -2,12 +2,12 @@
 /* ADOBE FONTS */
 @import url("https://use.typekit.net/nrd5zsw.css");
 
-$bg-color: #29292c;
+$bg-color: #111112;
 $light-color: #f0f8f7;
 $white: #f0f8f7;
 
 
-$link: #72798e;
+$link: #aeb4c6;
 $link-hover: #6f6e80;
 
 /* MAIN ELEMENTS */
@@ -113,7 +113,7 @@ img{
     }
     
     a:hover{
-        color: #8e919b;
+        color: $link-hover;
     }
 }
 
@@ -162,20 +162,22 @@ img{
         font-family:"Flaco-Mono";
         font-size:.8em;
         text-decoration: none;
-        color:#72798e;
+        color: $link;
         text-transform: uppercase;
+
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+            transition: all .3s linear;
     }
     
     a:hover{
-        color:#8e919b;
+        color: $link-hover;
     }
     
     input{box-sizing: border-box;
-    -webkit-transition: all .3s linear;
-    -moz-transition: all .3s linear;
-    -ms-transition: all .3s linear;
-    -o-transition: all .3s linear;
-        transition: all .3s linear;}
+    }
     
     small{
         color:#959595;
