@@ -118,20 +118,18 @@ body{
         display:block;
         text-align: left;
         width:100%;
-        max-width:600px;
         
         color: $h1;
-        font-family:"Flaco-Mono";
-        margin-top:.5em;
+        font-weight: 100;
+        margin: 1em 0;
     }
     
         
     h3{
-        margin:0;
         color:#b0b3ba;
         font-weight:100;
         font-size:.9em;
-        font-family:"Flaco-Mono";
+
     }
     
     h1{

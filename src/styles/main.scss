@@ -8,6 +8,7 @@ $white: #f0f8f7;
 
 $t: #adb2b2; // general type
 
+$h-sub: #5e6060;
 
 $link: #6f6e80;
 $link-hover: #aeb4c6;
@@ -106,8 +107,8 @@ img{
     padding:.75em;
     box-sizing: border-box;
     overflow: hidden;
-    
-    color: $t;
+    color: $h-sub;
+
     opacity:0.8;
     text-align: center;
     font-family: "aktiv-grotesk-extended", sans-serif !important;
@@ -175,7 +176,8 @@ img{
     opacity:1;
     
     .logo{
-        max-width:400px;
+        width:400px;
+        max-width:90%;
         padding-bottom:1em;
     }
     
@@ -207,7 +209,7 @@ img{
     
     h3{
         margin:0;
-        color:#b0b3ba;
+        color: $h-sub;
         font-weight:100;
         font-size:.9em;
         font-family: "Flaco-Mono", monospace;
@@ -224,7 +226,7 @@ img{
         margin-left:.1em;
         margin-top:.5em;
         margin-bottom:1em;
-        font-size: 1.1em;
+        font-size: .9em;
 
         color:#adb2b2;
         line-height:1.5em;
@@ -238,6 +240,7 @@ img{
         width:80%;
         height: 50px;
         max-width:290px;
+        color: $h-sub;
         border:0;
         padding:.75em;
         font-size:.8em;
@@ -255,7 +258,7 @@ img{
         text-transform: uppercase;
         font-family: "Flaco-Mono", monospace !important;
         background:#fff;
-        color: #5c5858;
+        color: $h-sub;
         border:0;
         border-radius:0;
         
@@ -266,7 +269,7 @@ img{
     }
     
     input[type=submit]:hover{
-        background: #5c5858;
+        background: $h-sub;
         color: #fff;
         line-height:19px;
         text-shadow: 0 0 18px #fff;
