@@ -26,7 +26,7 @@
       
       <link rel="stylesheet" href="assets/styles/main.css">
   </head>
-  <body>
+  <body class="fade">
       
         
       <div id="header">
@@ -43,7 +43,7 @@
                     <a href="about.html">About</a>
                 </div>-->
           
-        <div class="box" id="subscribe">    
+        <div class="box fade" id="subscribe">    
             <div class="box-inner" style="max-width:550px;">
                 
                 <img src="assets/images/technologyph-logo-w.png" class="logo">
@@ -83,7 +83,7 @@
         
           
         <div class="box" id="footer">    
-            <div class="box-inner" style="">
+            <div class="box-inner">
                 <p>Reach us at <a href="mailto:hello@technology.ph">hello@technology.ph</a>; by <a href="https://developh.org" target="_blank">Developh</a></p>
             </div>
         </div>
@@ -97,6 +97,13 @@
   
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script type="text/javascript">
+      
+       
+  document.addEventListener("DOMContentLoaded", function(e) {
+    document.body.classList.remove('fade');
+      document.getElementById("subscribe").classList.remove("fade");
+  });
+      
    function autorun()
    {
     
@@ -105,5 +112,6 @@
    else if (document.attachEvent) document.attachEvent("onreadystatechange", autorun);
    else window.onload = autorun;
   </script>
+      
   </body>
 </html>

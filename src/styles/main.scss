@@ -25,9 +25,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; 
+      opacity: 1;
+      transition: 1.2s opacity;
 }
 
+
+body.fade {
+    opacity: 0;
+    transition: none;
+}
 
 .container {
     position: absolute;
@@ -155,6 +162,7 @@ img{
 
 /* MAILCHIMP */
 
+
 #subscribe{
     
     min-height:100vh;
@@ -164,6 +172,8 @@ img{
     background-position: bottom;
     background-size:80%;
     background-image:url(../images/technologyph-icons.png);
+    transition: 2s opacity;
+    opacity:1;
     
     .logo{
         max-width:400px;
@@ -215,7 +225,7 @@ img{
         margin-left:.1em;
         margin-top:.5em;
         margin-bottom:1em;
-        font-size: 1.2em;
+        font-size: 1.1em;
 
         color:#adb2b2;
         line-height:1.5em;
@@ -250,6 +260,10 @@ img{
         border:0;
         border-radius:0;
         
+
+        -o-transition: all 2s cubic-bezier(.175, .885, .32, 1.275);
+            transition: all 2s cubic-bezier(.175, .885, .32, 1.275);
+        
     }
     
     input[type=submit]:hover{
@@ -262,6 +276,12 @@ img{
     
     
 }
+
+
+#subscribe.fade{
+    opacity:0;
+}
+
 
 @font-face {
     font-family: 'Flaco-Mono';
