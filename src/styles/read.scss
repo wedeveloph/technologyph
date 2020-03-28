@@ -18,6 +18,13 @@ $h1: #c6c7c7;
 
 
 
+$link: #6f6e80;
+$link-hover: #aeb4c6;
+
+
+
+/* CODE */
+
 body{
     font-family: "aktiv-grotesk";
 }
@@ -153,7 +160,24 @@ body{
     
     // for openings
     p.intro{
+        margin-bottom:.5em;
         font-size:1.4em;
+    }
+    
+    
+    .share{
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin-bottom:2em;
+    }
+    
+    .share a{
+        display:inline-block;
+        margin:0 1em;
+        text-decoration: none;
+        color: $link;
+        text-align: left;
     }
     
     
