@@ -12,7 +12,7 @@
 /* COLORS */
 
 
-$t: #adb2b2; // general type
+$t: #d8dddd; // general type
 
 $h1: #c6c7c7;
 
@@ -38,13 +38,18 @@ body{
 .container{
     
     left:50%;
-    border-top:1px solid #000;
-    border-left:1px solid #000;
-    border-right:1px solid #000;
     width:100%;
     max-width:650px;
     transform: translate(-50%, 0);
     margin-bottom:1em;
+}
+
+
+#header{
+    position: absolute;
+    width:100%;
+    text-align: center;
+    z-index:99;
 }
 
 
@@ -61,7 +66,6 @@ body{
         opacity: 0.8;
         width:100%;
         height:100%;
-        
     }
     
     
@@ -81,6 +85,7 @@ body{
             margin:0;
             color:#fff;
             font-size:4em;
+            text-align: center;
         }
 
     }
@@ -96,7 +101,7 @@ body{
 
 #read{
     
-    font-family:"aktiv-grotesk";
+    max-width:700px;
     font-weight:300;
     
     h2{
@@ -124,17 +129,18 @@ body{
         font-size:2.8em;
         line-height:1.5em;
         color: $h1;
+        text-align: left;
     }
     
     
     p{
         font-family: "Flaco", sans-serif;
         align-self: center;
-        margin-left:.1em;
         margin-bottom:1.5em;
         font-size:1em;
         font-weight:400;
-        max-width:600px;
+        max-width:650px;
+        width:100%;
         
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
@@ -142,7 +148,12 @@ body{
 
         color: $t;
         line-height:1.7em;
-        width:100%;
+    }
+    
+    
+    // for openings
+    p.intro{
+        font-size:1.4em;
     }
     
     
