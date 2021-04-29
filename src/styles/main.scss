@@ -1,4 +1,3 @@
-
 /* ADOBE FONTS */
 @import url("https://use.typekit.net/nrd5zsw.css");
 
@@ -16,291 +15,321 @@ $link-hover: #aeb4c6;
 /* MAIN ELEMENTS */
 
 * {
-    font-family: "aktiv-grotesk";
+  font-family: "aktiv-grotesk";
+  box-sizing: border-box;
+
+
+  -o-transition: all 2s cubic-bezier(.175, .885, .32, 1.275);
+  transition: all 2s cubic-bezier(.175, .885, .32, 1.275);
 }
 
 body {
-    background: $bg-color;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: neue-haas-unica, sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-      opacity: 1;
-      transition: 1.2s opacity;
+  background: $bg-color;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 1;
+  transition: 1.2s opacity;
 }
 
 
 body.fade {
-    opacity: 0;
-    transition: none;
+  opacity: 0;
+  transition: none;
+  transition-delay: 2s;
 }
 
 .container {
-    position: absolute;
-    width: 100%;
-    min-height:100%;
-    top: 0;
-    left: 0;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .box {
-    width: 100%;
-    display: flex;
-    box-sizing: border-box; 
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
   align-items: center;
   justify-content: center;
 
-    .box-inner {
-        padding:1em;
-        box-sizing: border-box;
-    }
+  .box-inner {
+    padding: 1em;
+    box-sizing: border-box;
+  }
 
-    .inner-center {
-        padding: 1em;
-    }
+  .inner-center {
+    padding: 1em;
+  }
 }
 
 .box {
 
-    h1 {
-        font-family: freight-big-pro, serif;
-        font-size: 1.8em;
-        margin:0;
-    }
+  h1 {
+    font-family: freight-big-pro, serif;
+    font-size: 1.8em;
+    margin: 0;
+  }
 
 
-    p {
-        font-family: "aktiv-grotesk", "Helvetica",  system-ui, -apple-system, BlinkMacSystemFont,;
-        line-height: 1.7em;
-        margin:0;
-    }
+  p {
+    font-family: "aktiv-grotesk", "Helvetica", system-ui, -apple-system, BlinkMacSystemFont, ;
+    line-height: 1.7em;
+    margin: 0;
+  }
 }
 
 
-img{
-    max-height: 100%;
-    max-width: 100%;
+img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
-#header{
-    position: absolute;
-    box-sizing: border-box;
-    top:0; left:0;
-    padding:1.5em;
-    width:100%;
-    pointer-events: none;
-    
-    img{
-        max-width:300px;
-    }
-}
+.navigation {
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5vh;
+  z-index: 9999;
+  text-align: center;
 
-
-#footer{
-    
-    position: absolute;
-    bottom:0;
-    left:0;
-    padding:.75em;
-    box-sizing: border-box;
-    overflow: hidden;
-    color: $h-sub;
-
-    opacity:0.8;
+  a {
+    font-family: "Flaco-Mono";
+    display: inline-block;
+    text-decoration: none;
+    width: 90px;
+    margin: 0 .5em 0 .5em;
+    color: #e6e5eb;
     text-align: center;
-    font-family: "aktiv-grotesk-extended", sans-serif !important;
-    
-    a{
-        font-family:"Flaco-Mono";
-        font-size:.8em;
-        text-decoration: none;
-        text-transform: uppercase !important;
-        color: #e6e5eb;
-        margin:0 1em;
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-        transition: all .3s linear;
-    }
-    
-    a:hover{
-        color: $link-hover;
-    }
-}
+    font-size: .9em;
+    padding: .5em;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+  }
 
+  a:hover {
+    color: #6f6e80;
+    text-shadow: 0 0 15px #25262a;
+  }
 
-.navigation{
-        
-        position: absolute;
-        top:0;
-        right:0;
-        padding:5vh;
-    z-index:9999;
-        
-        a{
-            font-family:"Flaco-Mono";
-            display:inline-block;
-            text-decoration: none;
-            margin:0 .5em 0 .5em;
-            color:#e6e5eb;
-            font-size:.9em;
-            padding:.5em;
-            border-bottom:1px solid #696262;
-            text-transform: uppercase;
-            letter-spacing:.4px;
-        }
-        
-        a:hover{
-            color:#6f6e80;
-            text-shadow:0 0 15px #25262a;
-        }
-        
 }
 
 /* MAILCHIMP */
 
 
-#subscribe{
-    
-    min-height:100vh;
-    font-weight: 400;
-    font-style: normal;
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size:80%;
-    background-image:url(../images/technologyph-icons-a.png);
-    transition: 2s opacity;
-    opacity:1;
-    
-    .logo{
-        width:400px;
-        max-width:90%;
-        padding-bottom:1em;
-    }
-    
-    a{
-        font-family:"Flaco-Mono";
-        font-size:.8em;
-        text-decoration: none;
-        color: $link;
-        text-transform: uppercase;
+#subscribe {
 
-        -webkit-transition: all .3s linear;
-        -moz-transition: all .3s linear;
-        -ms-transition: all .3s linear;
-        -o-transition: all .3s linear;
-            transition: all .3s linear;
-    }
-    
-    a:hover{
-        color: $link-hover;
-    }
-    
-    input{box-sizing: border-box;
-    }
-    
-    small{
-        color:#959595;
-        font-family:"aktiv-grotesk";
-    }
-    
-    h3{
-        margin:0;
-        color: $h-sub;
-        font-weight:100;
-        font-size:.9em;
-        font-family: "Flaco-Mono", monospace;
-        text-transform: uppercase;
-    }
-    
-    h1{
-        font-size:3.2em;
-        line-height:1.1em;
-        color:#ffffff;
-    }
-    
-    p{
-        margin-left:.1em;
-        margin-top:.5em;
-        margin-bottom:1em;
-        font-size: .9em;
+  min-height: 60vh;
+  font-weight: 400;
+  font-style: normal;
+  //  background-repeat: repeat-x;
+  //  background-position: bottom;
+  //  background-size: 80%;
+  //  background-image: url(../images/technologyph-icons-a.png);
+  transition: 2s opacity;
+  opacity: 1;
 
-        max-width:80%;
-        color:#adb2b2;
-        line-height:1.5em;
-    }
-    
-    .form-line{
-        display:flex;}
-    
-    input[type=email]{
-        display:inline-block;
-        width:80%;
-        height: 50px;
-        max-width:290px;
-        color: $h-sub;
-        border:0;
-        padding:.75em;
-        font-size:.8em;
-        font-family: "Flaco-Mono", monospace;
-    }
-    
-    input[type=submit]{
+  .box-inner {
+    max-width: 600px;
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    width: 520px;
+    max-width: 90%;
+    padding-bottom: 1em;
+  }
+
+  a {
+    font-family: "Flaco-Mono";
+    font-size: .8em;
+    text-decoration: none;
+    color: $link;
+    text-transform: uppercase;
+
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+
+  a:hover {
+    color: $link-hover;
+  }
+
+  input {
+    box-sizing: border-box;
+  }
+
+  small {
+    color: #959595;
+    font-family: "aktiv-grotesk";
+  }
+
+  p {
+    font-size: 1.1em;
+    max-width: 100%;
+    margin: .5em 0;
+    color: #adb2b2;
+    line-height: 1.5em;
+  }
+
+  .form-line {
+    display: flex;
+  }
+
+  form {
+    margin: 1em 0;
+  }
+
+  input[type=email] {
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    color: $h-sub;
+    border: 0;
+    padding: .75em;
+    font-size: .8em;
+    font-family: "Flaco-Mono", monospace;
+  }
+
+  input[type=submit] {
     -webkit-appearance: none;
-        display:inline-block;
-        height: 50px;
-        float:right;
-        margin-left:-.3em;
-        padding:.75em;
-        font-size:.8em;
-        text-transform: uppercase;
-        font-family: "Flaco-Mono", monospace !important;
-        background:#fff;
-        color: $h-sub;
-        border:0;
-        border-radius:0;
-        
+    display: inline-block;
+    height: 50px;
+    float: right;
+    margin-left: -.3em;
+    padding: .75em;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-family: "Flaco-Mono", monospace !important;
+    background: #fff;
+    color: $h-sub;
+    border: 0;
+    border-radius: 0;
 
-        -o-transition: all 2s cubic-bezier(.175, .885, .32, 1.275);
-            transition: all 2s cubic-bezier(.175, .885, .32, 1.275);
-        
-    }
-    
-    input[type=submit]:hover{
-        background: $h-sub;
-        color: #fff;
-        line-height:19px;
-        text-shadow: 0 0 18px #fff;
-        cursor: pointer;
-    }
-    
-    
+
+  }
+
+  input[type=submit]:hover {
+    background: $h-sub;
+    color: #fff;
+    line-height: 19px;
+    text-shadow: 0 0 18px #fff;
+    cursor: pointer;
+  }
+
+
 }
 
 
-#subscribe.fade{
-    opacity:0;
+
+
+#subscribe.fade {
+  opacity: 0;
+  transition-delay: 4s;
+}
+
+
+/* TEXT */
+
+#publishing {
+  .box-inner {
+    width: 900px;
+    max-width: 90vw;
+  }
+}
+
+#texts {
+
+  border-top: 1px solid $h-sub;
+  border-bottom: 1px solid $h-sub;
+
+  width: 100%;
+  display: block;
+  padding: 1em 0;
+  margin: 2em 0;
+  color: #adb2b2;
+
+
+  .row {
+    display: flex;
+    justify-content: flex-start;
+
+    flex-wrap: nowrap;
+    padding: .5em;
+
+    ._author {
+      width: 20%;
+      font-family: "Flaco-Mono", monospace;
+      text-transform: uppercase;
+      font-size: .8em;
+      line-height: 26px;
+    }
+
+    ._date {
+      width: 15%;
+      line-height: 120%;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: .8em;
+      font-family: "Flaco-Mono", monospace;
+      line-height: 26px;
+    }
+
+    ._title {
+      text-align: right;
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    color: #adb2b2;
+  }
+
+  a:hover {
+    text-shadow: 0 0 20px #adb2b2;
+    opacity: 1;
+  }
+
+
+}
+
+#texts:hover .row {
+  opacity: 0.5;
+}
+
+#texts .row:hover {
+  opacity: 1;
 }
 
 
 @font-face {
-    font-family: 'Flaco-Mono';
-    src: url('https://technology.ph/assets/fonts/Flaco-Mono.woff2') format('woff2'),
-        url('https://technology.ph/assets/fonts/Flaco-Mono.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Flaco-Mono';
+  src: url('https://technology.ph/assets/fonts/Flaco-Mono.woff2') format('woff2'),
+    url('https://technology.ph/assets/fonts/Flaco-Mono.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
 
 
 @media only screen and (max-width: 900px) {
-    
-    #header{ display:none;  }
+
+  #header {
+    display: none;
+  }
 }
-
-
