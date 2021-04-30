@@ -294,6 +294,34 @@ img {
 
   }
 
+
+
+  @media only screen and (max-width: 900px) {
+    .row {
+      flex-wrap: wrap;
+      margin-bottom: .5em;
+
+
+      ._author {
+        width: auto;
+      }
+
+
+      ._date {
+        width: auto;
+        margin-right: 1em;
+      }
+
+      ._title {
+        text-align: left;
+        width: 100%;
+      }
+
+    }
+
+
+  }
+
   a {
     text-decoration: none;
     color: #adb2b2;
